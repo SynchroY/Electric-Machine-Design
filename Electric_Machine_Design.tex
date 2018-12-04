@@ -1,0 +1,167 @@
+% !TeX spellcheck = de_DE
+\documentclass[a4paper,11pt]{ctexart}
+
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage[shortlabels]{enumitem}
+\usepackage[hmargin=1.25in,vmargin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{bending}
+\usetikzlibrary{math}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.arrows}
+\usepackage[american inductors]{circuitikz}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{upgreek}
+\usepackage{xfrac}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{url}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{graphicx}
+\graphicspath{{graph/}}
+\usepackage{pythonhighlight}
+
+\renewcommand\theequation{\arabic{equation}}
+\renewcommand{\contentsname}{}
+\renewcommand\arraystretch{1.5}
+
+\newcommand{\kV}{\,\text{kV}}
+\newcommand{\V}{\,\text{V}}
+\newcommand{\Ohm}{\,\Omega}
+\newcommand{\MOhm}{\,M\Omega}
+\renewcommand{\H}{\,\text{H}}
+\newcommand{\s}{\,\text{s}}
+\newcommand{\kA}{\,\text{kA}}
+\newcommand{\A}{\,\text{A}}
+\newcommand{\MW}{\,\text{MW}}
+\newcommand{\W}{\,\text{W}}
+\newcommand{\MVar}{\,\text{MVar}}
+\newcommand{\MVA}{\,\text{MVA}}
+\renewcommand{\S}{\,\text{S}}
+\newcommand{\km}{\,\text{km}}
+\newcommand{\diff}{\text{d}}
+\newcommand{\Hz}{\,\text{Hz}}
+\newcommand{\kHz}{\,\text{kHz}}
+\renewcommand{\j}{\text{j}}
+\newcommand{\ssum}{\scriptscriptstyle \sum}
+
+%\renewcommand{\omega}{\upomega}
+
+\newcommand{\du}[1]
+{
+	#1^{\circ}
+}
+\newcommand{\ang}[1]
+{
+	\angle#1^{\circ}
+}
+
+\newcommand{\bfem}[1]
+{
+	\em\bfseries#1\normalfont
+}
+
+\newcommand{\subpar}
+{
+	\par
+	\hangafter = 0
+	\setlength{\hangindent}{1em}
+}
+
+\newcommand{\subsubpar}
+{
+	\par
+	\hangafter = 0
+	\setlength{\hangindent}{2em}
+}
+\newcommand{\subsubsubpar}
+{
+	\par
+	\hangafter = 0
+	\setlength{\hangindent}{3em}
+}
+
+\newenvironment{shrinkeq}[2]
+{
+	\bgroup
+	\addtolength\abovedisplayshortskip{#1}
+	\addtolength\abovedisplayskip{#1}
+	\addtolength\belowdisplayshortskip{#2}
+	\addtolength\belowdisplayskip{#2}
+}
+{
+	\egroup
+	\ignorespacesafterend
+}
+
+\setcounter{secnumdepth}{4}
+
+\title
+{
+	\linespread{1.5} \zihao{4}
+	高压数字测量系统课程设计 \\ 
+	\zihao{2}
+	开题报告
+}
+\author
+{
+	谢弘洋
+}
+\date{}
+
+\begin{document}
+	\pagestyle{plain}
+	
+\begin{figure}[t]
+	\setlength{\abovecaptionskip}{-10mm}
+	\setlength{\belowcaptionskip}{-60mm}
+	\centering
+	\includegraphics[scale=0.4]{page1.png}
+\end{figure}
+
+\begin{center}
+	\zihao{-3}
+	电\,气\,工\,程\,及\,其\,自\,动\,化\,-\,电\,机\,设\,计 \\
+	\vspace{0.7em}
+	
+	\zihao{1}
+	课\hspace{0.5em} 程\hspace{0.5em} 作\hspace{0.5em} 业\\
+	\vspace{3em}
+	\zihao{-3}
+
+	
+	
+	\vspace{6em}
+	\today
+\end{center}
+
+\titleformat{\section}{\Large\bfseries\raggedright}{\chinese{section}}{10pt}{}
+\titlespacing{\section}{0pt}{10pt}{5pt}
+\titleformat{\subsection}{\bfseries\zihao{-4}}{\arabic{subsection}.}{5pt}{}
+\titlespacing{\subsection}{1em}{2pt}{3pt}
+\titleformat{\subsubsection}{\bfseries\normalsize}{\arabic{subsection}.\arabic{subsubsection}}{5pt}{}
+\titlespacing{\subsubsection}{2em}{1pt}{0pt}
+\titleformat{\paragraph}{\bfseries\normalsize}{\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}}{5pt}{}
+\titlespacing{\paragraph}{3em}{1pt}{0pt}
+
+\newpage
+\begin{spacing}{1.5}
+	
+	\zihao{-4}
+	
+	
+\end{spacing}
+
+\end{document}
