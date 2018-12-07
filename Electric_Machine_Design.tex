@@ -236,7 +236,12 @@
 \entry
 额定电压$U_{N} = 380\V,\quad U_{N\phi} = 220\V$(星型接法)
 \entry
-功电流$I_{KW} = \frac{P_N}{m_1U_{N\phi}} = \frac{0.75\times10^3}{3\times220}\A=1.136\A $
+功电流
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
+	\begin{align}
+	I_{KW} = \frac{P_N}{m_1U_{N\phi}} = \frac{0.75\times10^3}{3\times220}\A=1.136\A
+	\end{align}
+\end{shrinkeq}
 \entry
 效率$\eta^{'}$
 \par
@@ -253,7 +258,7 @@
 每极每相槽数为整数。参考类似规格电机$q_1 = 3$，则$Z_1 = 2m_1pq_1 = 2\times3\times1\times2\times3 = 18$。再按表10-8选$Z_2 = 16$，并采用转子斜槽。
 \entry
 定转子每极槽数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	Z_{p1} &= \frac{Z_1}{2p} = \frac{18}{2} = 9\\
 	Z_{p2} &= \frac{Z_2}{2p} = \frac{16}{2} = 8
@@ -265,7 +270,7 @@
 一般可参考类似电机的主要尺寸来确定$D_{i1}$和$l_{ef}$。现按\textsection10-2中的分析来确定。
 \par
 由经验公式可得满载电势标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	K_{B}^{'} &= 0.0108\ln P_N - 0.013p +0.931 \\
 	&= 0.0108\ln 0.75 - 0.013\times 1 +0.931 = 0.915 \notag
@@ -273,15 +278,15 @@
 \end{shrinkeq}
 \par
 由式（10-7）可求出计算功率
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
-	P^{'} &= K_{B}^{'}\frac{P_N}{\eta^{'}\cos\varphi^{'}} \\
+	P^{'} &= K_{B}^{'}\frac{P_N}{\eta^{'}\cos\varphi^{'}} \\[1.5mm]
 	&= 0.915\times\frac{0.75\times 10^3}{0.75\times 0.84} = 1.089\times 10^3 \VA\notag
 	\end{align}
 \end{shrinkeq}
 \par
 初选$\alpha_{p}^{'} = 0.68$，$K_{Nm}^{'} = 1.11$，$K_{dp1}^{'} = 0.92$，由图10-2取$A^{'} =18000\sfrac{\A}{\m}$，由表10-1取$B_{\delta}^{'} = 0.6\T$，根据设计要求$n^{'}=2830\rpm$，于是由式（10-4）得
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	V &= \frac{6.1}{\alpha_{p}^{'}K_{Nm}^{'}K_{dp1}^{'}}\cdot\frac{1}{A^{'}B_{\delta}^{'}}\cdot\frac{P^{'}}{n^{'}} \\
 	&=\frac{6.1}{0.68\times 1.11\time 0.92}\times\frac{1}{18000\times 0.6}\times\frac{1.089\times 10^3}{2830}\m^3 \notag\\
@@ -292,26 +297,25 @@
 由表10-2取$\lambda = 0.75$，代入式（10-9），得
 \begin{shrinkeq}{-1ex}{-1ex}
 	\begin{align}
-	D_{i1}^{'} &= \sqrt[3]{\frac{2p}{\lambda\pi}V} \\
-	&=\sqrt[3]{\frac{2}{0.75\pi}\times 0.000313}\m = 0.0643\m \notag
+	D_{i1}^{'} &= \sqrt[3]{\frac{2p}{\lambda\pi}V}=\sqrt[3]{\frac{2}{0.75\pi}\times 0.000313}\m = 0.0643\m 
 	\end{align}
 \end{shrinkeq}
 再由表10-3，按定子内外径比求出定子冲片外径
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	D_{1}^{'} = \frac{D_{i1}^{'}}{\sfrac{D_{i1}}{D}} = \frac{0.0643}{0.56}  = 0.115\m
 	\end{align}
 \end{shrinkeq}
 \par
 根据标准直径最后确定$D_1 = 0.12\m$。于是
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	D_{i1} = D_1\times\frac{D_{i1}}{D_1} = 0.12\times 0.56\m  \approx 0.0672\m
 	\end{align}
 \end{shrinkeq}
 \par
 铁心的有效长度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	l_{ef} = \frac{V}{D_{i1}^{2}} = \frac{0.000313}{0.0672^2} = 0.0693\m
 	\end{align}
@@ -321,10 +325,11 @@
 气隙的确定
 \par
 参考类似产品或由经验公式（10-10a），得
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\delta &= 0.3\left(0.4+7\sqrt{D_{i1}l_i}\right)\times 10^{-3} \\
-	&=0.3\times\left(0.4+7\sqrt{0.0.0672\times 0.065}\right)\times 10^{-3}\m = 0.259\times 10^{-3} \notag
+	&=0.3\times\left(0.4+7\sqrt{0.0.0672\times 0.065}\right)\times 10^{-3}\m \notag\\
+	&= 0.259\times 10^{-3} \m\notag
 	\end{align}
 \end{shrinkeq}
 \par
@@ -336,21 +341,21 @@
 
 \entry
 极距
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	\uptau = \frac{\pi D_{i1}}{2p} = \frac{\pi\times 0.0672}{2\times 1}\m = 0.0106\m
 	\end{align}
 \end{shrinkeq}
 \entry
 定子齿距
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	t_1 = \frac{\pi D_{i1}}{Z_1} = \frac{\pi\times 0.0672}{18}\m = 0.01173\m
 	\end{align}
 \end{shrinkeq}
 \par
 \hspace{1.75em}转子齿距
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	t_2 = \frac{\pi D_2}{Z_2} = \frac{\pi\times 0.0667}{16}\m = 0.0131\m
 	\end{align}
@@ -363,30 +368,29 @@
 设计定子绕组
 \par
 按照式（10-14），每相串联导体数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	N_{\phi 1}^{'} &= \frac{\eta^{'}\cos\varphi^{'}\pi D_{i1}A^{'}}{m_1I_{KW}}\\
 	&=\frac{0.75\times 0.84\times\pi\times 0.0672\times 18000}{3\times 1.136} = 702 \notag
 	\end{align}
 \end{shrinkeq}
 取并联支路数$a_1 = 1$，由式（10-15），可得每槽导体数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
-	N_{s1}^{'} &= \frac{m_1a_1N_{\phi 1}^{'}}{Z_1}\\
-	&=\frac{3\times 1 \times 702}{18} = 117\notag
+	N_{s1}^{'} &= \frac{m_1a_1N_{\phi 1}^{'}}{Z_1}=\frac{3\times 1 \times 702}{18} = 117
 	\end{align}
 \end{shrinkeq}
 取$N_{s1} = 118$，于是每线圈匝数为59。
 \entry
 每相串联导体数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	N_{\phi 1} = \frac{N_{s1}Z_1}{m_1a_1} = \frac{118 \times 18}{3\times 1} = 708 \notag
 	\end{align}
 \end{shrinkeq}
 \par
 \hspace{1.75em}每相串联匝数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	N_{1} &= \frac{N_{\phi 1}}{2} = \frac{708}{2} =  354\notag
 	\end{align}
@@ -395,13 +399,13 @@
 绕组线规设计
 \par
 初选定子电密$J_{1}^{'} = 6\sfrac{\A}{\mm^2}$，由式（10-16），计算导线绕组并绕根数和每根导线截面积的乘积。
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	N_{i1}A_{c1}^{'} = \frac{I_{1}^{'}}{a_1J_{1}^{'}} = \frac{1.803}{1\times 6}\mm^2 = 0.3005\mm^2
 	\end{align}
 \end{shrinkeq}
 其中定子电流初步估计值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	I_{1}^{'} = \frac{I_{KW}}{\eta^{'}\cos\varphi^{'}} = \frac{1.136}{0.75\times 0.84}\A = 1.803\A
 	\end{align}
@@ -411,26 +415,26 @@
 设计定子槽形
 \par
 因定子绕组为圆导线散嵌，故采用梨形槽，齿部平行。初步取$B_{i1}^{'} = 1.6\T$，按式（10-18），估计定子齿宽
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	b_{i1} = \frac{t_1B_{\delta}^{'}}{K_{Fe}B_{i1}^{'}} = \frac{0.01173\times 0.6}{0.95 \times 1.4}\m = 0.00463\m
 	\end{align}
 \end{shrinkeq}
 初步取$B_{j1}^{'} = 1.5\T$，按式（10-19），估计定子轭部计算高度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	h_{j1}^{'} = \frac{\uptau\alpha_{p}^{'}B_{\delta}^{'}}{2K_{Fe}B_{j1}^{'}} = \frac{0.106\times 0.6\times 0.68}{2\times 0.95\times 1.5}\m = 0.0152\m
 	\end{align}
 \end{shrinkeq}
 按齿宽和定子轭部计算高度的估算值做出定子槽形如图 ，槽口尺寸参考类似产品决定，取$b_{01} =2.5 \mm$，$h_{01} = 0.5\mm$。齿宽计算如下：
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	b_{i1} &= \frac{\pi\left(D_{i1}+2h_{01}+2h_{11}+2h_{21}\right)}{Z_1}-2r_{21}\\
-	&=\left[\frac{\pi\left(0.0672+2\times 0.0005+2\times 0.0015+2\times 0.0059\right)}{18}-2\times 0.0049\right]\m \notag\\
+	&=\left[\frac{\pi\left(0.0672+2\times 0.0005+2\times 0.0015+2\times 0.0059\right)}{18}-2\times 0.0049\right]\m\hspace{2em} \notag\\
 	&= 0.00469\m\notag
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	b_{i1} &= \frac{\pi\left(D_{i1}+2h_{01}+2h_{11}\right)}{Z_1}-b_{11}\\
 	&= \left[\frac{\pi\left(0.0672+2\times 0.0005+2\times 0.0015\right)}{36} -0.0078 \right]\m \notag\\
@@ -442,7 +446,7 @@
 槽满率
 \par
 槽面积
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	A_{s} &= \frac{2r_{21}+b_{11}}{2}\left(h_{s}^{'}-h\right)+\frac{\pi r_{21}^{2}}{2}\\
 	&=\left[\frac{2\times 0.0049+0.0078 }{2}\times\left( 0.0079-0.002 \right)+\frac{\pi\times 0.0049^2}{2}\right]\m^2\notag\\
@@ -453,14 +457,14 @@
 按附录三，槽绝缘采用DMDM复合绝缘，$\Delta_{i} = 0.25\mm$，槽楔为$h = 2\mm$层压板，槽绝缘占面积$A_{i} = \Delta_{i}\left(2h_{s}^{'}+\pi r_{21}+2r_{21}+b_{11}\right) = 0.00025\times\left(2\times 0.0079+\pi\times 0.0049+2\times 0.0049+ 0.0078\right)\m^2 = 1.199\times 10^{-5}\m^2$
 \par
 槽有效面积
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	A_{ef} = A_{s}-A{i} = \left(8.606\times 10^{-5} -1.199times 10^{-5} \right)\m^2 =7.406\times 10^{-5} \m^2
 	\end{align}
 \end{shrinkeq}
 \par
 槽满率
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	s_{f} &= \frac{N_{i1}N_{s1}d^{2}}{A_{ef}}\\
 	& = \frac{118\times\left(0.68\times 10^{-3}\right)^2}{7.406\times 10^{-5} } = 73.67\% \qquad\text{符合要求}\notag
@@ -468,31 +472,27 @@
 \end{shrinkeq}
 \entry
 绕组系数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
-	\beta = \frac{y}{Z_{p1}}=\frac{y}{m_1q_1} = \frac{5}{6}\\
-	K_{p1} = \sin\frac{\beta\pi}{2} = \sin\frac{5\pi}{12} = 0.966
-	\end{align}
-\end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
-	\begin{align}
-	K_{d1} = \frac{\sin\frac{q\alpha}{2}}{q\sin\frac{\alpha}{2}} = \frac{\sin\frac{3\times\du{20}}{2}}{3\sin\frac{\du{20}}{2}} = 0.960
+	\beta &= \frac{y}{Z_{p1}}=\frac{y}{m_1q_1} = \frac{5}{6}\\[1.5mm]
+	K_{p1} &= \sin\frac{\beta\pi}{2} = \sin\frac{5\pi}{12} = 0.966\\[2mm]
+	K_{d1} &= \dfrac{\sin\dfrac{q\alpha}{2}}{q\sin\dfrac{\alpha}{2}} = \dfrac{\sin\dfrac{3\times\du{20}}{2}}{3\sin\dfrac{\du{20}}{2}} = 0.960
 	\end{align}
 \end{shrinkeq}
 其中
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	\alpha = p\frac{2\pi}{Z_1}=\frac{1\times\du{360}}{18} = \du{20}
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-2ex}{-1.5ex}
 	\begin{align}
 	K_{dp1} = K_{d1}K_{p1} = 0.960\times 0.966 = 0.927
 	\end{align}
 \end{shrinkeq}
 \par
 每相有效串联导体数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	N_{\phi 1}K_{dp1} = 708\times 0.927 = 656
 	\end{align}
@@ -502,7 +502,7 @@
 设计转子槽形和转子绕组
 \par
 按式（10-39），预计转子导条电流：
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{2}^{'} = K_{I}I_{1}^{'}\frac{3N_{\phi 1}K_{dp1}}{Z_2} =0.89\times 1.803\times \frac{3\times 708\times 0.927}{16}\A = 197\A
 	\end{align}
@@ -510,20 +510,20 @@
 其中，$K_{I}$由表10-10查出。
 \par
 初步取转子导条电密$J_{B}^{'} = 3.5\sfrac{\A}{\mm^2}$，于是导条截面积
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	A_{B}^{'}=\frac{I_{2}^{'}}{J_{B}^{'}} = \frac{197}{3.5}\mm^2 = 56\mm^2
 	\end{align}
 \end{shrinkeq}
 \par
 初步取$B_{i2}^{'} = 1.3\T$，估算转子齿宽
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	b_{i2}^{'} = \frac{t_2B_{\delta}^{'}}{K_{Fe}B_{i2}^{'}}=\frac{0.0131\times 0.6}{0.95\times 1.3}\m = 0.00636\m
 	\end{align}
 \end{shrinkeq}
 初步取$B_{j2}^{'} = 1.25\T$，估算转子轭部计算高度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	b_{j2}^{'} = \frac{\uptau \alpha_{p}^{'}B_{\delta}^{'}}{2K_{Fe}B_{j2}^{'}}=\frac{0.106\times 0.68\times 0.6}{2\times 0.95\times 1.25}\m = 0.0182\m
 	\end{align}
@@ -532,32 +532,32 @@
 
 \par
 齿壁不平行的槽形的齿宽（按\textsection 3-3）计算如下：
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	b_{i2_{\frac{1}{8}}} &= \frac{\pi\left[D_2-2\times\frac{2}{3}\left(h_{02}+h_{12}+h_{22}\right)\right]}{Z_2}-b_{12} \\
-	&=\left[\frac{\pi\times\left(0.0667 - 2\times\frac{2}{3}\left(0.0003+0.0016+0.0047\right)  \right)}{16}-0.0061 \right]\m\notag\\ 
+	&=\left[\frac{\pi\times\left(0.0667 - 2\times\frac{2}{3}\left(0.0003+0.0016+0.0047\right)  \right)}{16}-0.0061 \right]\m\hspace{2em}\notag\\ 
 	&= 0.00527\m \notag
 	\end{align}
 \end{shrinkeq}
 导条截面积（转子槽面积）
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	A_{B} &= \frac{b_{02}+b_{12}}{2}h_{12}+b_{12}h_{22}+\frac{\pi r_{22}^{2}}{2} \\
 	&=\left[\frac{0.0006+0.0061}{2}\times 0.0016 +0.0061 \times 0.0047 +
-	\frac{\pi\times 0.0031^2}{2}\right]\m^2 \notag\\
+	\frac{\pi\times 0.0031^2}{2}\right]\m^2 \hspace{2em}\notag\\
 	&= 4.91\times 10^{-5}\m^2\notag
 	\end{align}
 \end{shrinkeq}
 \par
 按式（11-41）估计端环电流
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{R}^{'}=I_{2}^{'}\frac{Z_2}{2\pi p} = 197\times \frac{16}{2\pi\times 1}\A = 501\A
 	\end{align}
 \end{shrinkeq}
 \par
 端环所需面积
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	A_{R}^{'} = \frac{I_{R}^{'}}{J_{R}^{'}} = \frac{501}{0.6\times 3.5}\mm^2 = 238\mm^2
 	\end{align}
@@ -568,26 +568,26 @@
 \entry
 计算满载电势
 \par
-初设$K_{B}^{'}=1-\epsilon_{L}^{'} = 0.927$，由式（3-51），得
-\begin{shrinkeq}{-1ex}{-1ex}
+初设$K_{B}^{'}=1-\epsilon_{L}^{'} = 0.85$，由式（3-51），得
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
-	E_1 = \left(1-\epsilon_{L}^{'}\right)U_{N\phi} = 0.927\times 220\V = 203.94\V
+	E_1 = \left(1-\epsilon_{L}^{'}\right)U_{N\phi} = 0.85\times 220\V = 187.0\V
 	\end{align}
 \end{shrinkeq}
 \entry
 计算每极磁通
 \par
-初设$K_{s}^{'} = 1.15$，由图3-5查得$K_{Nm} = 1.0975$，由式（3-9），得
-\begin{shrinkeq}{-1ex}{-1ex}
+初设$K_{s}^{'} = 1.27$，由图3-5查得$K_{Nm} = 1.094$，由式（3-9），得
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
-	\Phi = \frac{E_1}{4K_{Nm}K_{dp1}fN_1} = \frac{203.94}{4\times 1.0975\times 0.927\times 50\times 354}\Wb = 0.00283\Wb
+	\Phi = \frac{E_1}{4K_{Nm}K_{dp1}fN_1} = \frac{187.0}{4\times 1.094\times 0.927\times 50\times 354}\Wb = 0.002613\Wb
 	\end{align}
 \end{shrinkeq}
 \par
 为计算磁路各部分磁密，需要先计算磁路中各部分得导磁截面：
 \entry
 每极下齿部截面积
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	A_{i1} &= K_{Fe}l_{i}b_{i1}Z_{p1} = 0.95\times 0.065\times 0.00463\times 9\m^2 = 2573\times 10^{-6}\m^2\\
 	A_{i1} &= K_{Fe}l_{i}b_{i2}Z_{p2} = 0.95\times 0.065\times 0.00517\times 8\m^2 = 2554\times 10^{-6}\m^2
@@ -595,24 +595,26 @@
 \end{shrinkeq}
 \entry
 定子轭部计算高度由式（3-37）
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	h_{j1}^{'}&=\frac{D_1-D_{i1}}{2}-h_{s1}+\frac{r_{21}}{3}\\
-	&=\left[\frac{0.12 - 0.0672}{2}-\left( 0.0005+ 0.0015+ 0.0059+0.0049\right)\times 10^{-3}+\frac{ 0.0049\times 10^{-3}}{3}\right]\m \notag\\
+	&=\left[\frac{0.12 - 0.0672}{2}+\frac{ 0.0049\times 10^{-3}}{3}\right.\notag\\
+	&\qquad \left.-\left( 0.0005+ 0.0015+ 0.0059+0.0049\right)\times 10^{-3}\right]\m \notag\\
 	&= 0.0152\m \notag
 	\end{align}
 \end{shrinkeq}
 \par
 转子轭部计算高度由式（3-38）
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	h_{j2}^{'}&=\frac{D_2-D_{i2}}{2}-h_{s2}+\frac{r_{22}}{3}\\
-	&=\left[\frac{0.0667 - 0.019}{2}-\left( 0.001613+ 0.0047+ 0.0003+0.00309\right)\times 10^{-3}+\frac{ 0.00309\times 10^{-3}}{3}\right]\m \notag\\
+	&=\left[\frac{0.0667 - 0.019}{2}+\frac{ 0.00309\times 10^{-3}}{3}\right.\notag\\
+	&\qquad\left.-\left( 0.001613+ 0.0047+ 0.0003+0.00309\right)\times 10^{-3}\right]\m \notag\\
 	&= 0.01517\m \notag
 	\end{align}
 \end{shrinkeq}
 轭部导磁截面积
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	A_{j1} &= K_{Fe}l_{i}h_{j1}^{'} = 0.95\times 0.065\times 0.0152 = 938.6\times 10^{-6}\m^2 \\
 	A_{j2} &= K_{Fe}l_{i}h_{j2}^{'} = 0.95\times 0.065\times 0.01517 = 936.7\times 10^{-6}\m^2 
@@ -620,69 +622,69 @@
 \end{shrinkeq}
 \entry
 一极下空气隙截面积
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	A_{\delta} = \uptau l_{ef} = 0.106\times 0.0655\m^2 = 6943\times 10^{-6}\m^2
 	\end{align}
 \end{shrinkeq}
 \entry
-磁路计算所选的是通过磁极中心线的闭合回路（见\textsection3-1），该回路上的气隙磁密是最大值$B_{\delta}$（见\textsection3-2）。为此，由图3-5，先找出计算极弧系数$\alpha_{p}^{'}= $，由此求得波幅系数
-\begin{shrinkeq}{-1ex}{-1ex}
+磁路计算所选的是通过磁极中心线的闭合回路（见\textsection3-1），该回路上的气隙磁密是最大值$B_{\delta}$（见\textsection3-2）。为此，由图3-5，先找出计算极弧系数$\alpha_{p}^{'}= 0.684$，由此求得波幅系数
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
-	F_{s} = \frac{B_{\delta}}{B_{\delta\text{av}}} = \frac{1}{\alpha_{p}^{'}} =1.4925 
+	F_{s} = \frac{B_{\delta}}{B_{\delta\text{av}}} = \frac{1}{\alpha_{p}^{'}} =1.46 
 	\end{align}
 \end{shrinkeq}
 按照“程序”，$F_s$可由图按附1-1按初设的$K_{s}^{'}$查取，但须注意，为了实用上的方便，“程序”中$F_{s}$的定义与这里的略有不同，并且计算每极磁通$\Phi$的公式也做了相应的改变，详见[3-3]。
 \entry
 气隙磁密由式（3-7）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
-	B_{\delta} = \frac{F_{s}\Phi}{A_{\delta}} = \frac{ 1.4925\times 0.00283}{ 6943\times 10^{-6}}\T = 0.6083\T
+	B_{\delta} = \frac{F_{s}\Phi}{A_{\delta}} = \frac{ 1.46\times 0.002613}{ 6943\times 10^{-6}}\T = 0.5471\T
 	\end{align}
 \end{shrinkeq}
 \entry
 由式（3-26），对应与气隙磁密最大hi处的定子齿部磁密
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
-	B_{i1} &= \frac{B_{\delta}l_{ef}t_1}{K_{Fe}l_{i}^{i}b_{i1}}\cdot\frac{Z_{p1}}{Z_{p1}} = \frac{F_{s}\Phi}{A_{i1}} \\
-	&=\frac{1.4925\times 0.00283}{ 2573\times 10^{-6}}\T = 1.642\T
+	B_{i1} &= \frac{B_{\delta}l_{ef}t_1}{K_{Fe}l_{i}^{i}b_{i1}}\cdot\frac{Z_{p1}}{Z_{p1}} = \frac{F_{s}\Phi}{A_{i1}} \\[2mm]
+	&=\frac{1.46\times 0.00283}{ 2573\times 10^{-6}}\T = \T
 	\end{align}
 \end{shrinkeq}
 \entry
 转子齿部磁密
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	B_{i2} = \frac{F_{s}\Phi}{A_{i2}} = \frac{1.4925 \times 0.00283}{ 2554\times 10^{-6}}\T = 1.654\T
 	\end{align}
 \end{shrinkeq}
 \entry
 从附录五的D23磁化曲线找出对应上述磁密的磁场强度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	H_{i1} = 50\sfrac{\A}{\cm};\quad H_{i2} = 53.4\sfrac{\A}{\cm}
 	\end{align}
 \end{shrinkeq}
 \entry
 有效气隙长度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\delta_{ef} = K_{\delta}\delta = 1.032\times 0.2588\times 10^{-3}\m = 0.2671\times 10^{-3}\m
 	\end{align}
 \end{shrinkeq}
 \par
 其中气隙系数按式（3-20）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	K_{\delta 1} &= \frac{t_1\left(4.4\delta+0.75 b_{01}\right)}{t_1\left(4.4\delta +0.75 b_{01}\right)-b_{01}^{2}} \\
-	& = \frac{0.01173\times\left(4.4\times 0.2588+0.75\times 0.5\right)}{0.01173\times\left(4.4\times 0.2588+0.75\times 0.5\right) - 0.5^2\times 10^{-3}} = 1.0143\notag\\
+	& = \frac{0.01173\times\left(4.4\times 0.2588+0.75\times 0.5\right)}{0.01173\times\left(4.4\times 0.2588+0.75\times 0.5\right) - 0.5^2\times 10^{-3}} = 1.0143\notag\\[1.5mm]
 	K_{\delta 2} &= \frac{t_2\left(4.4\delta+0.75 b_{02}\right)}{t_2\left(4.4\delta +0.75 b_{02}\right)-b_{02}^{2}} \\
-	& = \frac{0.0131\times\left(4.4\times 0.2588+0.75\times 0.6\right)}{0.0131\times\left(4.4\times 0.2588+0.75\times 0.6\right) - 0.6^2\times 10^{-3}} = 1.0176\notag\\
+	& = \frac{0.0131\times\left(4.4\times 0.2588+0.75\times 0.6\right)}{0.0131\times\left(4.4\times 0.2588+0.75\times 0.6\right) - 0.6^2\times 10^{-3}} = 1.0176\notag\\[1.5mm]
 	K_{\delta} &= K_{\delta 1}K_{\delta 2} = 1.0143\times 1.0176 =1.032 
 	\end{align}
 \end{shrinkeq}
 \entry
 齿部磁路计算长度按式（3-28）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	L_{i1} &= \left(h_{11}+h_{21}\right)+\frac{1}{3}r_{21} \\
 	&= \left(0.0015+0.059 +\frac{0.0049}{3}\right) = 9.03\times 10^{-3}\m \notag\\
@@ -692,7 +694,7 @@
 \end{shrinkeq}
 \entry
 按式（3-40）计算轭部磁路计算长度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	L_{j1}^{'} &=\frac{\pi\left(D_1-h_{j1}^{'}\right)}{2p}\times\frac{1}{2} = \frac{\pi\left(0.12 - 0.0152\right)}{2\times 1\times 2} = 0.0823\m\\
 	L_{j2}^{'} &=\frac{\pi\left(D_{i2}+h_{j2}^{'}\right)}{2p}\times\frac{1}{2} = \frac{\pi\left(0.019 + 0.01517\right)}{2\times 1\times 2} = 0.0268\m
@@ -700,14 +702,14 @@
 \end{shrinkeq}
 \entry
 按式（3-6）计算气隙磁压降
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	F_{\delta} = \frac{K_{\delta}B_{\delta}\delta}{\mu_0} = \frac{1.032 \times 0.6083\times 0.2588}{1.25\times 10^{-6}} = 129.973\A
 	\end{align}
 \end{shrinkeq}
 \entry
 齿部磁压降
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	F_{i1} &= H_{i1}L_{i1} = 50\times 10^{2}\times 9.03\times 10^{-3} \A = 45.15\A \\
 	F_{i2} &= H_{i2}L_{i2} = 53.4\times 10^{2}\times 7.343\times 10^{-3} \A = 39.21\A 
@@ -715,7 +717,7 @@
 \end{shrinkeq}
 \entry
 饱和系数按（3-15）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	K_{s} = \frac{F_{\delta}+F_{i1}+F_{i2}}{F_{\delta}} = \frac{129.973 +45.15 + 39.21}{129.973} = 1.65
 	\end{align}
@@ -773,14 +775,14 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 
 \entry
 定子轭部磁密按式（3-36）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	B_{j1} = \frac{1}{2}\cdot\frac{\upphi}{A_{j1}} = \frac{1}{2}\times\frac{0.00286 }{939\times 10^{-6}} = 1.523\T
 	\end{align}
 \end{shrinkeq}
 \entry
 转子轭部磁密
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	B_{j2} = \frac{1}{2}\cdot\frac{\upphi}{A_{j2}} = \frac{1}{2}\times\frac{0.00286}{937\times 10^{-6} } = 1.526\T
 	\end{align}
@@ -789,29 +791,29 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 从附录五的D23磁化曲线找出对应上述磁密的磁场强度：$H_{j1} = 22.8\sfrac{\A}{\cm}$；$H_{j2} = 23.1\sfrac{\A}{\cm}$
 \entry
 按式（3-42）计算轭部磁压降，其中轭部磁压降校正系数见图附1-3b。
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
-	\frac{h_{j1}^{'}}{\uptau} = \frac{0.0152}{0.106} = 0.1434,\qquad B_{j1} = 1.523 \T\qquad\text{于是}C_{j1} = 0.42
+	\frac{h_{j1}^{'}}{\uptau} = \frac{0.0152}{0.106} = 0.1434,\, B_{j1} = 1.523 \T\,\text{,于是}C_{j1} = 0.42
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-2ex}{-1.5ex}
 	\begin{align}
 	F_{j1} = C_{j1}H_{j1}L_{j1}^{'} = 0.42\times 22.8\times 10^{2} \times 0.0823 \A = 78.8 \A
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
-	\frac{h_{j2}^{'}}{\uptau} = \frac{0.01517}{0.106} = ,\qquad B_{j2} =1.526 \T\qquad\text{于是}C_{j2} = 0.18
+	\frac{h_{j2}^{'}}{\uptau} = \frac{0.01517}{0.106} = ,\, B_{j2} =1.526 \T\,\text{,于是}C_{j2} = 0.18
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-2ex}{-1.5ex}
 	\begin{align}
 	F_{j2} = C_{j2}H_{j1}L_{j2}^{'} = 0.18\times 23.1\times 10^{2}\times 0.0268 \A =11.14 \A
 	\end{align}
 \end{shrinkeq}
 \entry
 每极磁势
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	F_{0} &= F_{\delta}+F_{i1}+F_{i2}+F_{j1}+F_{j2} \\
 	&=\left(125.3 + 28.44+ 24.82+ 78.8+ 11.14\right)\A = 268.5\A \notag
@@ -819,29 +821,29 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 按式（3-57）计算满载磁化电流
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
-	I_{m} &= \frac{2pF_0}{0.9m_1N_1K_{dq1}} \\
+	I_{m} &= \frac{2pF_0}{0.9m_1N_1K_{dq1}} \\[2mm]
 	&= \frac{2\times 1\times 268.5}{0.9\times 3\times 354\times 0.927}\A = 0.606\A\notag
 	\end{align}
 \end{shrinkeq}
 \entry
 磁化电流标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	I_{m}^{*} = \frac{I_m}{I_{KW}} = \frac{0.606}{1.136} = 0.533
 	\end{align}
 \end{shrinkeq}
 \entry
 励磁电抗按式（4-149）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	X_{ms} &= 4f\mu_0\frac{m_1}{\pi}\frac{\left(N_1K_{dp1}\right)^2}{K_sp}l_{ef}\frac{\uptau}{\delta_{ef}}\\
 	&= \frac{4\times 50\times 4\pi\times 10^{-7}\times 3\times\left(354\times 0.927\right)^2\times 0.0655\times 0.106}{\pi\times 1.42\times 1\times 0.268\times 10^{-3}}\Ohm\notag\\
 	&= 488.28\Ohm
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	X_{ms}^{*} = X_{ms}\frac{I_{KW}}{U_{N\phi}} = \frac{488.28\times 1.136}{220} = 2.521
 	\end{align}
@@ -854,7 +856,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 线圈平均半匝长度（见图附1-4）
 \par
 定子线圈节距
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\uptau_{y} &= \frac{\pi\left[D_{i1}+2\left(h_{01}+h_{11}\right)+h_{21}+r_{21}\right]}{2p}\beta\\
 	&=\frac{\pi\left[ + 2\left( + \right)\times 10^{-3}+ \times 10^{-3}+ \times 10^{-3}\right]}{2\times 2} \times  \notag\\
@@ -864,7 +866,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 其中节距比$\beta = \sfrac{\left(  \right)}{\left(  \right)} = $式平均值。
 \par
 直线部分长度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	l_{B} = l_{i}+2d_1 = \left(0.040+2\times \right)\m = \m
 	&= \m \notag
@@ -873,7 +875,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 其中，$d_1$式线圈直线部分伸出铁心的长度，取$10\sim 30\mm$，机座大，极数少者取较大值。
 \par
 平均半匝长
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	l_{o} = l_{B} +K_{o}\uptau_{y} = + \times  = \m
 	\end{align}
@@ -881,26 +883,26 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 其中，$K_{o}$是经验系数，2极取$1.16$，4、6极取$1.2$，8极取$1.25$。
 \entry
 端部平均长
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	l_{E} = 2d_1 +K_{o}\uptau_{y} = \left( \times + \times \right)\m = \m
 	\end{align}
 \end{shrinkeq}
 \entry
 由式（4-38）可知感应电机定子绕组的漏抗为
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	X_{\sigma 1} = 4\pi f\mu_0\frac{N_{1}^2}{pq_1}l_{ef}\ssum\lambda_{1}
 	\end{align}
 \end{shrinkeq}
 除以阻抗基值$Z_{KW}=\sfrac{U_{N\phi}}{I_{KW}} = \sfrac{m_1U_{N\phi}^{2}}{P_{N}}$，便可得定子漏抗标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
 	X_{\sigma 1}^{*} = C_x\left(\frac{2m_1p}{Z_1K_{dp1}^{2}}\ssum\lambda_{1}\right)
 	\end{align}
 \end{shrinkeq}
 式中，$\ssum\lambda_{1} = \lambda_{s1}+\lambda_{\delta 1}+\lambda_{E1}$，$C_{x}$为漏抗系数，等于
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	C_{x} &= \frac{4\pi f\mu_0\left(N_1K_{dp1}\right)^2 l_{ef}P_{N}}{m_1pU_{N\phi}^2} \\
 	&= \frac{4\pi\times 50\times 4\pi\times 10^{-7}\times\left(432\times 0.9456\right)^2\times 0.0436\times 750}{3\times 2\times 220^2}\notag\\
@@ -909,25 +911,25 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 按照附录四计算定子槽比漏磁导。因为是双层绕组，整距？，节距漏抗系数$K_{v1} = K_{L1} = $。
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\lambda_{s1} = K_{v1}\lambda_{v1}+K_{L1}\lambda_{L1} = \times + \times = 
 	\end{align}
 \end{shrinkeq}
 其中
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\lambda_{v1} = \frac{h_{01}}{b_{01}} +\frac{2h_{11}}{b_{01}+b_{11}} = \frac{ }{ } + \frac{ }{ } =  
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\lambda_{L1} = \text{，因}\frac{h_{21}}{2r_{21}} = \frac{ - }{2\times } = ，\frac{b_{11}}{2r_{21}} = \frac{ }{2\times } = 
 	\end{align}
 \end{shrinkeq}
 \entry
 只在铁心部分由槽漏抗，因而计算槽漏抗时要乘上$\sfrac{l_{i}}{l_{ef}}$：
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	X_{s1}^{*} &= \frac{2m_1p}{Z_1K_{dp1}^{2}}\cdot\frac{l_{i}}{l_{ef}}\lambda_{s1}C_x\\
 	&=\frac{2\times 3\times 2}{36\times 0.9456^2}\times\frac{0.040}{0.0436}\times C_x\notag\\
@@ -936,10 +938,10 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 考虑到饱和的影响，定子谐波漏抗可按式（4-76）代入式（4-38）计算：
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
-	X_{\delta 1}^{*} &= \frac{2m_1p}{Z_1K_{dp1}^{2}}\lambda_{s1}C_x=\frac{2m_1p}{Z_1K_{dp1}^{2}}\cdot\frac{m_1q_1\uptau}{\pi^2\delta_{ef}K_s}C_x = \frac{m_1}{\pi^2}\frac{\uptau}{\delta_{ef}}\frac{\ssum s}{K_{dp1}^{2}K_{s}}\\
-	&=\frac{3}{\pi^2}\times\frac{0.0605}{ }\frac{ }{0.9456^2 \times}C_x = C_x \notag
+	X_{\delta 1}^{*} &= \frac{2m_1p}{Z_1K_{dp1}^{2}}\lambda_{s1}C_x=\frac{2m_1p}{Z_1K_{dp1}^{2}}\cdot\frac{m_1q_1\uptau}{\pi^2\delta_{ef}K_s}C_x = \frac{m_1}{\pi^2}\frac{\uptau}{\delta_{ef}}\frac{\ssum s}{K_{dp1}^{2}K_{s}}\\[1.5mm]
+	&=\frac{3}{\pi^2}\times\frac{0.0605}{ }\times\frac{ }{0.9456^2 \times}C_x = C_x \notag
 	\end{align}
 \end{shrinkeq}
 其中，$\ssum s = $由图4-10以$q_1 = 3$，$\beta = $查出。
@@ -948,7 +950,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 
 \entry
 定子漏抗标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	X_{\sigma 1}^{*} &= X_{s1}^{*}+X_{\delta 1}^{*}+X_{E1}^{*} \\
 	&=\left( + + \right)C_x = C_x = 
@@ -956,66 +958,66 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 转子漏抗标幺值的计算与丁子漏抗标幺值的计算相似，但要将转子漏抗折算到定子边。将转子数据
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	N_2 =  ,\qquad pq_2 = \frac{Z_2}{2m_2} = 
 	\end{align}
 \end{shrinkeq}
 代入式（4-38），乘以阻抗折算系数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	K=\frac{4m_1\left(N_1K_{dp1}\right)^2}{Z_2}
 	\end{align}
 \end{shrinkeq}
 和除以阻抗基值，便有
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	X_{\sigma 2}^{*} = \frac{2m_1p}{Z_2}\ssum\lambda_2C_x
 	\end{align}
 \end{shrinkeq}
 \entry
 转子槽比漏磁导的计算见附录四。
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\lambda_{s2} = \lambda_{v2}+\lambda_{L2} =  + = 
 	\end{align}
 \end{shrinkeq}
 其中
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	\lambda_{v2} = \frac{h_{02}}{b_{02}} = \frac{ }{ } = 
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-2ex}{-2ex}
 	\begin{align}
 	\lambda_{L2} = \frac{2h_{12}}{b_{02}+b_{12}}+\lambda_{L} = \frac{2\times }{ + }+ = ，\qquad\lambda_{L} = \text{由}
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-2ex}{-1.5ex}
 	\begin{align}
 	\frac{h_{22}}{2r_{22}}  = \frac{ }{2\times } = ，\qquad \frac{b_{12}}{2r_{22}} = \frac{ }{2\times } = \text{查曲线得到。}
 	\end{align}
 \end{shrinkeq}
 \entry
 转子槽漏抗标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
-	X_{s2}^{*} &= \frac{2m_1p}{Z_2}\frac{l_{i}}{l_{ef}}\lambda_{s2}C_{x} \\
+	X_{s2}^{*} &= \frac{2m_1p}{Z_2}\frac{l_{i}}{l_{ef}}\lambda_{s2}C_{x} \\[1.5mm]
 	& = \frac{2\times 3\times 2}{28}\times \frac{0.040}{0.0436}\times C_x = C_x\notag
 	\end{align}
 \end{shrinkeq}
 \entry
 考虑饱和影响的谐波比漏磁导可由式（4-79）求出，于是转子谐波漏抗标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1ex}
 	\begin{align}
-	X_{\delta 2}^{*} &= \frac{Z_2}{2p\pi^2}\cdot\frac{\uptau}{\delta_{ef}}\cdot\frac{\ssum R}{K_s}\cdot\frac{2m_1p}{Z_2}C_x=\frac{m_1\uptau\ssum R}{\pi^2\delta_{ef}K_{s}}C_x\\
+	X_{\delta 2}^{*} &= \frac{Z_2}{2p\pi^2}\cdot\frac{\uptau}{\delta_{ef}}\cdot\frac{\ssum R}{K_s}\cdot\frac{2m_1p}{Z_2}C_x=\frac{m_1\uptau\ssum R}{\pi^2\delta_{ef}K_{s}}C_x\\[2mm]
 	&= \frac{3\times 0.0605\times }{\pi\times \times }C_x = C_x\notag
 	\end{align}
 \end{shrinkeq}
-其中，$\ssum R = $由图4-11以$\sfrac{Z_2}{2p}=\frac{28}{4} = 7$查出。
+其中，$\ssum R = $由图4-11以$\sfrac{Z_2}{2p}=\sfrac{28}{4} = 7$查出。
 \entry
 转子绕组端部比漏磁导按式（4-95）计算，于是转子绕组端部漏抗标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-2ex}{-2ex}
 	\begin{align}
 	X_{E2}^{*} &= \frac{0.2523Z_2D_R}{2pl_{ef}\times 2p}\frac{2m_1p}{Z_2}C_x = \frac{0.757}{l_{ef}}\cdot\frac{D_R}{2p}C_x \\
 	&= \frac{0.757}{0.0436}\times\frac{ }{2\times 2}C_x = C_x\notag
@@ -1023,7 +1025,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 转子斜槽漏抗按式（4-162）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2ex}
 	\begin{align}
 	X_{sk}^{*} &= 0.5\left(\frac{b_{sk}}{t_2}\right)^2X_{\delta 2}^2 \\
 	&= 0.5\times\left(\frac{ }{0.00858}\right)^2\times  C_x = C_x\notag
@@ -1031,7 +1033,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 转子漏抗标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	X_{\sigma 2}^{*} &= X_{s2}^{*}+X_{\delta 2}^{*}+X_{E2}^{*} +X_{sk}^{*} = \left( + + + \right)C_x \\
 	&= C_x = \notag
@@ -1039,14 +1041,14 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 定转子漏抗标幺值之和
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-2.5ex}
 	\begin{align}
 	X_{\sigma}^{*} = X_{\sigma 1}^{*}+X_{\sigma 2}^{*} = + = 
 	\end{align}
 \end{shrinkeq}
 \entry
 定子绕组直流电阻按式（4-5）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_1 = \rho_{\omega}\frac{2N_1l_o}{N_{i1}A_{c1}^{'}a_1}=\frac{0.0217\times 10^{-6}\times 2\times 432\times }{1\times 0.328\times 10^{-6}\times 1}\Ohm = \Ohm
 	\end{align}
@@ -1054,7 +1056,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 其中，$\rho_{\omega}=0.0217\times 10^{-6}\Ohm\cdot m$为B级绝缘平均工作温度$75\celsius$时铜的电阻率。
 \entry
 定子绕组相电阻标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_1^{*} = R_1\frac{I_{KW}}{U_{N\phi}} = \frac{ \times 1.136}{220} = 
 	\end{align}
@@ -1063,7 +1065,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 有效材料的计算
 \par
 感应电机的有效材料是指定子绕组导电材料和定转子铁心到此材料，电机的成本主要由有效材料的用量决定（见\textsection2-1）。定子铜的重量
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	G_{\text{Cu}} &= Cl_{o}N_{s1}Z_{1}A_{c1}^{'}N_{i1}\rho_{\text{Cu}}\\
 	&= 1.05\times \times 72 \times 36 \times 0.328\times 10^{-6}\times 1 \times 8.9\times 10^{-3}\kg = \kg\notag
@@ -1072,7 +1074,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 其中，$C$是考虑导线绝缘和引线重量的系数，漆包圆铜线$C=1.05$；$\rho_{\text{Cu}} = 8.9\times 10^{3}\sfrac{\kg}{\m^3}$是铜的密度。
 \par
 硅钢片重量
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	G_{\text{Fe}} &= K_{Fe}l_{i}\left(D_1+\delta\right)^2\rho_{\text{F}}\\
 	&= 0.95\times 0.040\times \left(0.12+ \right)^2\times 7.8\times 10^{3}\kg =  \kg\notag
@@ -1082,48 +1084,48 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 
 \entry
 按式（4-12）并这算至定子边便可计算转子电阻的折算值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_{2}^{'}\approx\rho_{\omega}\left(\frac{K_Bl_B}{A_B}+\frac{Z_2D_R}{2\pi p^2A_{R}}\right)\frac{4m_1\left(N_1K_{dp1}\right)^2}{Z_2} = R_{B}^{'}+R_{R}^{'}
 	\end{align}
 \end{shrinkeq}
 其中，$K_{B}$是考虑铸铝转子因叠片不整齐，造成槽面积减小，导条电阻增加，通常取$K_B = 1.04$。
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_{B}^{'} = \frac{ 0.0434\times 10^{-6}\times 1.04\times }{ }\times\frac{4\times 3\times \left(432\times 0.9456\right)^2}{16}\Ohm = \Ohm
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_{B}^{*} = R_{B}^{'}\frac{I_{KW}}{U_{N\phi}} =\frac{ \times 1.136}{220} = 
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_{R}^{'} = \frac{ 0.0434\times 10^{-6}\times  \times 4\times 3\times\left(432\times 0.9456\right)^2}{2\pi\times 1^2\times }\Ohm = \Ohm
 	\end{align}
 \end{shrinkeq}
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_{R}^{*} = R_{R}^{'}\frac{I_{KW}}{U_{N\phi}} =\frac{ \times 1.136}{220} = 
 	\end{align}
 \end{shrinkeq}
 其中，$\rho_{\omega} = 0.0434\times 10^{-6}\Omega\cdot\m$是B级绝缘平均工作温度$75\celsius$时铝的电阻率。
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	R_2^{*} = R_{B}^{*}+R_{R}^{*} = + =
 	\end{align}
 \end{shrinkeq}
 \entry
 定子电流有功分量标幺值按式（10-48）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{1P}^{*} = \frac{1}{\eta^{'}} = 
 	\end{align}
 \end{shrinkeq}
 \entry
 转子电流无功分量标幺值按式（10-49）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{x}^{*} &= \sigma_1 X_{\sigma}^{*}\left(I_{1P}^{*}\right)^2\left[1+\left(\sigma_1X_{\sigma}^{*}I_{1P}^{*}\right)\right]\\
 	&= \times \times ^2\times\left[1+\left(\times \times \right)^2\right] \notag\\
@@ -1131,21 +1133,21 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 	\end{align}
 \end{shrinkeq}
 其中系数$\sigma_1$
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\sigma_1 = 1+\frac{X_{\sigma_1}^{*}}{X_{ms}^{*}} = 1+\frac{ }{ } = 
 	\end{align}
 \end{shrinkeq}
 \entry
 定子电流无功分量标幺值按式（10-47）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{1Q}^{*} = I_{m}^{*} +I_{X}^{*} = + =
 	\end{align}
 \end{shrinkeq}
 \entry
 满载电势标幺值按式（10-6）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	K_{E} &= 1-\epsilon_{L} = 1-\left(I_{1P}^{*}R_{1}^{*}+I_{1Q}^{*}X_{\sigma_1}^{*}\right)\\
 	&= 1-\left( \times + \times \right) = \notag
@@ -1154,70 +1156,70 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 与第22项的初设值$K_{E}^{'}$相符。
 \entry
 由式（3-52）计算空载电势标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	1-\epsilon_{0} = 1-I_{m}^{*}X_{\sigma_1}^{*} = 1- \times = 
 	\end{align}
 \end{shrinkeq}
 \entry
 假设饱和系数$K_{s}$不变，波幅系数$F_{s}$不变，于是空载时定子齿部磁密及磁场强度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	B_{i1_0} = \frac{1-\epsilon_{0}}{1-\epsilon_{L}}B_{i1} = \frac{ }{ }\times \T = \T;\qquad H_{i1_0} = \sfrac{\A}{\cm}
 	\end{align}
 \end{shrinkeq}
 \entry
 空载时转子齿部磁密及磁场强度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	B_{i2_0} = \frac{1-\epsilon_{0}}{1-\epsilon_{L}}B_{i2} = \frac{ }{ }\times \T = \T;\qquad H_{i2_0} = \sfrac{\A}{\cm}
 	\end{align}
 \end{shrinkeq}
 \entry
 空载时定子轭部磁密及磁场强度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	B_{j1_0} = \frac{1-\epsilon_{0}}{1-\epsilon_{L}}B_{j1} = \frac{ }{ }\times \T = \T;\qquad H_{j1_0} = \sfrac{\A}{\cm}
 	\end{align}
 \end{shrinkeq}
 \entry
 空载时转子轭部磁密及磁场强度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	B_{j2_0} = \frac{1-\epsilon_{0}}{1-\epsilon_{L}}B_{j2} = \frac{ }{ }\times \T = \T;\qquad H_{j2_0} = \sfrac{\A}{\cm}
 	\end{align}
 \end{shrinkeq}
 \entry
 空载气隙磁密
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	B_{\delta_0} = \frac{1-\epsilon_{0}}{1-\epsilon_{L}}B_{\delta} = \frac{ }{ }\times \T = \T
 	\end{align}
 \end{shrinkeq}
 \entry
 空载时定子齿部磁压降
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	F_{i1_0} = H_{i1_0}L_{i1} = \times \A = \A
 	\end{align}
 \end{shrinkeq}
 \entry
 空载时转子齿部磁压降
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	F_{i2_0} = H_{i2_0}L_{i2} = \times \A = \A
 	\end{align}
 \end{shrinkeq}
 \entry
 空载时定子轭部磁压降，此时$C_{j1} = $
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	F_{j1_0} = C_{j1}H_{i1_0}L_{j1}^{'} = \times \times \A = \A
 	\end{align}
 \end{shrinkeq}
 \entry
 空载时转子轭部磁压降，此时$C_{j2} = $
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	F_{j2_0} = C_{j2}H_{i2_0}L_{j2}^{'} = \times \times \A = \A
 	\end{align}
@@ -1226,7 +1228,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 空载时气隙磁压降
 \entry
 空载时定子轭部磁压降，此时$C_{j1} = $
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	F_{\delta_0} = \frac{K_{\delta}\delta B_{\delta_0}}{\mu_0} = \frac{ \times \times }{4\pi\times 10^{-7}} \A = \A
 	\end{align}
@@ -1235,7 +1237,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 空载时每极磁势
 \entry
 空载时定子轭部磁压降，此时$C_{j1} = $
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	F_{0_0} &= F_{\delta_0}+F_{i1_0}+F_{i2_0}+F_{j1_0}+F_{j2_0}\\
 	&=\left( + + + + \right)\A = \A
@@ -1245,7 +1247,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 空载磁化电流
 \entry
 空载时定子轭部磁压降，此时$C_{j1} = $
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{m_0} = \frac{2pF_{0_0}}{0.9m_1N_1K_{dp1}} = \frac{2\times }{0.9\times 3\times \times }\A = \A
 	\end{align}
@@ -1259,7 +1261,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \section{工作性能计算}
 \entry
 由式（10-46）计算定子电流标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{1}^{*} &= \sqrt{I_{1P}^{*2}+I_{1Q}^{*2}} = \sqrt{ ^2+ ^2} = \\
 	I_{1} &= I_{1}^{*}I_{KW} = \times \A = \A 
@@ -1267,35 +1269,35 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 定子电流密度
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	J_1 = \frac{I_{1}}{aN_{1}A_{c1}^{'}} = \frac{  }{ \times \times }\sfrac{\A}{\mm^2} = \sfrac{\A}{\mm^2}
 	\end{align}
 \end{shrinkeq}
 \entry
 定子线负荷
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	A_{1} = \frac{m_1N_{\phi 1}I_1}{\pi D_{i1}} = \frac{3\times \times }{\pi\times }\sfrac{\A}{\m} = \sfrac{\A}{\m}
 	\end{align}
 \end{shrinkeq}
 \entry
 转子电流标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{2}^{*} = \sqrt{I_{1P}^{*2}+I_{X}^{*2}} = \sqrt{ ^2+ ^2} = 
 	\end{align}
 \end{shrinkeq}
 \par
 导条电流实际值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{2} = I_{2}^{*}I_{KW}\frac{m_1N_{\phi 1}K_{dp1}}{Z_2} = \times 1.136\times\frac{3\times \times }{16}\A = \A
 	\end{align}
 \end{shrinkeq}
 \par
 端环电流实际值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{R} = I_{2}\frac{Z_{2}}{2\pi p} = \times \frac{16}{2\pi\times 1}\A = \A
 	\end{align}
@@ -1304,21 +1306,21 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 转子电流密度
 \par
 导条电密
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	J_{B} = \frac{I_2}{A_{B}} = \frac{ }{ }\sfrac{\A}{\mm^2} = \sfrac{\A}{\mm^2}
 	\end{align}
 \end{shrinkeq}
 \par
 端环电密
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	J_{R} = \frac{I_{R}}{A_{R}} = \frac{ }{ }\sfrac{\A}{\mm^2} = \sfrac{\A}{\mm^2}
 	\end{align}
 \end{shrinkeq}
 \entry
 定子铜损耗的标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_{\text{Cu}_1}^{*} &= \frac{p_{\text{Cu}_1}}{P_{N}}=\frac{m_1I_{1}^{2}R_1}{m_1I_{KW}^{2}Z_{KW}} = I_{1}^{*2}R_{1}^{*}\\
 	&= ^2\times  = \notag
@@ -1327,7 +1329,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 转子铝损耗的标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_{\text{Al}_2}^{*} &= I_{2}^{*2}R_{2}^{*} = ^2\times = \\
 	p_{\text{Al}_2} &= p_{\text{Al}_2}^{*}P_N = \times 750\W = \W
@@ -1335,14 +1337,14 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 \end{shrinkeq}
 \entry
 负载时的附加损耗按规定2极时取$p_{s}^{*} = $
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_s = p_{s}^{*}P_N = \times 750\W = \W
 	\end{align}
 \end{shrinkeq}
 \entry
 机械损耗可参考同类型相近对各电机由空载实验分析计算得出的出局，若无数据可参考时，则按式（5-82）计算：
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_{fw}&=\left(\frac{3}{p}\right)^2D_{1}^{4}\times 10^{ } \\
 	&=\left(\frac{3}{1}\right)^2\times ^4\times 10^{ }\W = \W\notag\\
@@ -1355,7 +1357,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 先计算基本铁耗，再乘以经验系数就得到全部铁损耗。
 \par
 定子轭部铁耗由式（5-15）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_{\text{Fe}j} = k_2p_{hej}G_j = 2\times \times \W = \W
 	\end{align}
@@ -1363,7 +1365,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 式中，$k_2$按经验取为2；
 \par
 轭部重量
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	G_{j} = 4\pi A_{j1}L_{j1}^{'}\rho_{\text{Fe}} = 4\times 1\times \times 7.8\times 10^{3}\kg = \kg
 	\end{align}
@@ -1372,7 +1374,7 @@ $K_{s} = 1.425$。误差$\sfrac{\left( 1.425- 1.42\right)}{1.425} = 0.35\%\qquad
 $p_{hej}$是轭部铁损耗系数，根据$B_{j1_0} = \T$从附录六查得$p_{hej} = \sfrac{\W}{\kg}$
 \par
 定子齿部铁耗由式（5-17）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_{\text{Fe}i} = k_1p_{hei}G_{i} = 2.5\times \times \W = \W
 	\end{align}
@@ -1380,7 +1382,7 @@ $p_{hej}$是轭部铁损耗系数，根据$B_{j1_0} = \T$从附录六查得$p_{h
 式中，$k_1$对于闭口槽按经验取为$2.5$；
 \par
 齿部重量
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	G_{i} = 2p\times A_{i1}L_{i1}\rho_{\text{Fe}} = 2\times 1\times \times \times 7.8\times 10^{3}\kg = \kg
 	\end{align}
@@ -1389,7 +1391,7 @@ $p_{hej}$是轭部铁损耗系数，根据$B_{j1_0} = \T$从附录六查得$p_{h
 $p_{hei}$是齿部铁损耗系数，根据$B_{i1_0} = \T$从附录六查得$p_{hei} = \sfrac{\W}{\kg}$
 \par
 于是全部铁损耗
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_{\text{Fe}} &= p_{\text{Fe}j}+p_{\text{Fe}i} = \left( + \right)\W = \W\\
 	p_{\text{Fe}}^{*}&=\frac{p_{\text{Fe}} }{P_{N}} = \frac{ }{750} =   
@@ -1397,7 +1399,7 @@ $p_{hei}$是齿部铁损耗系数，根据$B_{i1_0} = \T$从附录六查得$p_{h
 \end{shrinkeq}
 \entry
 由式（10-53）可计算总损耗标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\ssum p^{*} &= p_{\text{Cu}_1}^{*}+p_{\text{Al}_2}^{*}+p_{s}^{*}+p_{fw}^{*}+p_{\text{Fe}}^{*}\\
 	&= + + + + = \notag  
@@ -1405,14 +1407,14 @@ $p_{hei}$是齿部铁损耗系数，根据$B_{i1_0} = \T$从附录六查得$p_{h
 \end{shrinkeq}
 \entry
 输入功率标幺值
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	P_{N1}^{*} = 1+\ssum P^{*} = 1+ = 
 	\end{align}
 \end{shrinkeq}
 \entry
 由式（10-52）可得
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\eta = 1-\frac{\ssum p^{*}}{P_{N1}^{*}} = 1-\frac{ }{ } = \%   
 	\end{align}
@@ -1454,21 +1456,21 @@ $p_{N1}^{*} = $
 $\eta = \%$，误差$=\frac{\left( - \right)}{ } = \%< \%$
 \entry
 功率因数
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	\cos\varphi = \frac{I_{1P}^{*}}{I_{1}^{*}} = \frac{ }{ } =    
 	\end{align}
 \end{shrinkeq}
 \entry
 额定转差率由式（10-54）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	s_{N} &= \frac{p_{\text{Al}_2}^{*}}{1+p_{\text{Al}_2}^{*}+p_{\text{Fe}_r}^{*}+p_{s}^{*}+p_{fw}^{*}} \\
 	&=\frac{ }{1+ + + + } = \%\notag 
 	\end{align}
 \end{shrinkeq}
 式中
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	p_{\text{Fe}_r}^{*} &= \frac{p_{\text{Fe}j_{r}}+p_{\text{Fe}i_r}}{P_N}\\
 	&=\dfrac{\left(1-\dfrac{1}{2}\right)\times +\left(1-\dfrac{1}{2.5}\times \right)}{750} =   
@@ -1476,7 +1478,7 @@ $\eta = \%$，误差$=\frac{\left( - \right)}{ } = \%< \%$
 \end{shrinkeq}
 \entry
 额定转速
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	n_{N} &= n_1\left(1-s_N\right) = \frac{60f}{p}\left(1-s_N\right)\\
 	&=\frac{60\times 2}{1}\times \left(1-  \right)\rpm = \rpm
@@ -1484,7 +1486,7 @@ $\eta = \%$，误差$=\frac{\left( - \right)}{ } = \%< \%$
 \end{shrinkeq}
 \entry
 最大转矩倍数按式（11-55）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	T_{m}^{*} &= \frac{1-s_N}{2\left(R_{1}^{*}+\sqrt{R_{1}^{*2}+X_{\sigma}^{*2}}\right)}\\
 	&=\frac{1- }{2\sqrt{ ^2 + ^2}} =  \notag
@@ -1494,29 +1496,251 @@ $\eta = \%$，误差$=\frac{\left( - \right)}{ } = \%< \%$
 \section{起动性能计算}
 \entry
 按照式（10-56）假设起动电流
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	I_{st}^{'} = \left(2.5\sim 3.5\right)T_{m}^{*}I_{KW} = 3\times \times 1.136\A = \A
 	\end{align}
 \end{shrinkeq}
 \entry
 起动时产生漏磁的定转子槽磁势平均值由式（10-59）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
 	F_{st} &= I_{st}^{'}\frac{N_{s1}}{\sqrt{2}a_1}\left(K_{v1}-K_{d1}^2K_{p1}\frac{Z_1}{Z_2}\right)\sqrt{1-\epsilon_{0}}\\
 	&= \times \frac{ }{\sqrt{2}\times }\times\left( + ^2\times \times\frac{18}{16}\right)\times\sqrt{ }\A = \A\notag
 	\end{align}
 \end{shrinkeq}
 由此磁势产生的虚拟磁密按式（10-60）计算
-\begin{shrinkeq}{-1ex}{-1ex}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
 	\begin{align}
-	s_{N} &= \frac{p_{\text{Al}_2}^{*}}{1+p_{\text{Al}_2}^{*}+p_{\text{Fe}_r}^{*}+p_{s}^{*}+p_{fw}^{*}} \\
-	&=\frac{ }{1+ + + + } = \%\notag 
+	B_{L}  =\frac{\mu_0 F_{st}}{2\delta\beta_0} = \frac{4\pi\times 10^{-7}\times }{2\times \times }\T = \T
 	\end{align}
 \end{shrinkeq}
-	
-	
-	
+其中，修正系数
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	\beta_0 = 0.64 +2.5\sqrt{\frac{\delta}{t_1+t_2}} = 0.64+2.5\sqrt{\frac{ }{ + }} = 
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时漏抗饱和系数$K_s$由图10-18查出：
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	K_{s} = 0.51,\qquad 1-K_s =  
+	\end{align}
+\end{shrinkeq}
+\entry
+漏磁路饱和引起的定子齿顶宽度的减小
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	c_{s1} = \left(t_1-b_{01}\right)\left(1-K_s\right)=\left( - \right)\times \times 10^{-3}\m = \times 10^{-3}\m
+	\end{align}
+\end{shrinkeq}
+\entry
+漏磁路饱和引起的定子齿顶宽度的减小
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	c_{s2} = \left(t_2 - b_{02}\right)\left(1-K_s\right) = \left( - \right)\times \times 10^{-3}\m = \times 10^{-3}\m
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时转子槽比漏磁导按式（10-68）计算
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	\lambda_{s1\left(st\right)} = K_{v1}\left(\lambda_{v1}-\Delta\lambda_{v1}\right)+K_{L1}\lambda_{L1} = \left( - \right)+ =
+	\end{align}
+\end{shrinkeq}
+其中
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	\Delta\lambda_{v1} &= \frac{h_{01}+0.58h_{11}}{b_{01}}\frac{c_{s1}}{c_{s1}+1.5b_{01}}\\
+	&= \frac{ + \times }{ }\times\frac{ }{ + \times } = \notag
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时定子槽漏抗
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{s1\left(st\right)}^{*} = \frac{\lambda_{s1\left(st\right)}}{\lambda_{s1}}X_{s1}^{*} = \frac{ }{ }\times C_x = C_x
+	\end{align}
+\end{shrinkeq}
+\entry
+按式（10-61）计算起动时定子谐波漏抗
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{\delta 1\left(st\right)}^{*} = K_{s}X_{\delta 1}^{*} = \times C_x = C_x
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时定子漏抗
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{\sigma 1\left(st\right)}^{*} = X_{s1\left(st\right)}^{*}+X_{\delta 1\left(st\right)}^{*} +X_{E1}^{*} = \left( + + \right)C_x = 
+	\end{align}
+\end{shrinkeq}
+\entry
+按照式（10-75）计算考虑集肤效应的转子导条相对高度
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	\xi &= 1.987\times 10^{-3}h_B\sqrt{\frac{b_{B}}{b_{s2}}\frac{f}{\rho_{B}}}\\
+	&= 1.987\times 10^{-3}\times \sqrt{\frac{50}{\times 10^{-6}}} = \notag
+	\end{align}
+\end{shrinkeq}
+其中，$h_{B} = \left( + \right)\m = \m$式导条高度。
+\entry
+集肤效应引起的电阻增加系数$K_{F}$和漏抗减小系数$K_{x}$从图4-23查出：
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	K_{F} = \frac{R_{\sim}}{R_{0}} = 1.8;\qquad K_{x}=\frac{X_{\sim}}{X_{0}} = 
+	\end{align}
+\end{shrinkeq}
+\entry
+根据附录四可计算起动时转子槽比漏磁导的减小
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	\Delta\lambda_{v2} = \frac{h_{02}}{b_{02}}\frac{c_{s2}}{c_{s2}+b_{02}} = \frac{ }{ }\times\frac{ }{ + } = 
+	\end{align}
+\end{shrinkeq}
+\par
+于是起动时转子槽比漏磁导
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	\lambda_{s2\left(st\right)} = \left(\lambda_{v2}-\Delta\lambda_{v2}\right)+K_{x}\lambda_{L2} = - + \times =
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时转子槽漏抗
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{s2\left(st\right)}^{*} = \frac{\lambda_{s2\left(st\right)}}{\lambda_{s2}}X_{s2}^{*} = \frac{ }{ }\times  C_x = C_x
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时转子谐波漏抗按式（10-62）计算
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{\delta 2\left(st\right)}^{*} = K_{z}X_{\delta 2}^{*} = \times C_x = C_x
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时转子斜槽漏抗按式（10-63）计算
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{sk\left(st\right)}^{*} = K_{s}X_{sk}^{*} = \times C_x = C_x
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时转子漏抗
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{\sigma 2\left(st\right)}^{*} &= X_{s2\left(st\right)}^{*}+X_{\delta 2\left(st\right)}^{*} +X_{sk\left(st\right)}^{*}+X_{E2}^{*}\\
+	&=\left( + + + \right)C_x = C_x  = \notag
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时总漏抗
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	X_{\sigma\left(st\right)}^{st} = X_{\sigma 1\left(st\right)}^{*} + X_{\sigma 2\left(st\right)}^{*} = + =
+	\end{align}
+\end{shrinkeq}
+\entry
+按式（10-78）计算起动时转子电阻
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	R_{st}^{*} = R_{1}^{*}+R_{2\left(st\right)}^{*} = + =
+	\end{align}
+\end{shrinkeq}
+\entry
+起动时总阻抗
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	Z_{st}^{*} = \sqrt{R_{st}^{*2}+X_{\sigma\left(st\right)}^{*2}} = \sqrt{ ^2 + ^2} = 
+	\end{align}
+\end{shrinkeq}
+\entry
+起动电流
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	I_{st} = \frac{I_{KW}}{Z_{st}^{*}} = \frac{ }{ }\A = \A
+	\end{align}
+\end{shrinkeq}
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	\text{误差}= \frac{ - }{ } = \%\qquad\text{太大}
+	\end{align}
+\end{shrinkeq}
+\par
+起动电流的假设值$I_{st}^{'}$太小，由\textsection10-5中分析可知，再次假设时取$I_{st}^{'\!'}>I_{st}$，并重新计算从第100项起的有关各项：
+\setcounter{designitem}{99}
+\entry
+$I_{st}^{'\!'} = \A$
+\entry
+$F_{st} = \A$，$B_{L} = \T$
+\entry
+$K_{z} = $，$1-K_{z} = $
+\entry
+$c_{s1} = \times 10^{-3}\m$
+\entry
+$c_{s2} = \times 10^{-3}\m$
+\entry
+$\Delta\lambda_{v1} = $，$\lambda_{s1\left(st\right)} = $
+\entry
+$X_{s1\left(st\right)}^{*} = C_x$
+\entry
+$X_{\delta 1\left(st\right)}^{*} = C_x$
+\entry
+$X_{\sigma 1\left(st\right)}^{*} = C_x = $
+\setcounter{designitem}{110}
+\entry
+$\Delta\lambda_{v2} = $，$\lambda_{s2\left(st\right)} = $
+\entry
+$X_{s2\left(st\right)}^{*} = C_x$
+\entry
+$X_{\delta 2\left(st\right)}^{*} = C_x$
+\entry
+$X_{sk\left(st\right)}^{*} = C_x$
+\entry
+$X_{\sigma 2\left(st\right)}^{*} = C_x = $
+\entry
+$X_{\sigma 2\left(st\right)}^{*} = $
+\setcounter{designitem}{118}
+\entry
+$Z_{\left(st\right)}^{*} = $
+\entry
+$I_{st} = \A$，误差$=\sfrac{\left( - \right)}{ } = 0.2\%$
+\entry
+起动电流倍数
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	i_{st} = \frac{I_{st}}{I_{1}} = \frac{ }{ } = 
+	\end{align}
+\end{shrinkeq}
+\entry
+按式（10-85）计算起动转矩倍数
+\begin{shrinkeq}{-1.5ex}{-1.5ex}
+	\begin{align}
+	T_{st}^{*} = \frac{R_{2\left(st\right)}^{*}}{Z_{st}^{*2}}\left(1-s_{N}\right) = \frac{ }{ ^2}\times\left(1- \right) = 
+	\end{align}
+\end{shrinkeq}
+\par
+下面将这台电机的主要性能指标与设计要求中的标准作以比较：
+\begin{table}[h]
+	\centering
+	\begin{tabular}{>{\arraybackslash}p{12em}*{3}{>{\centering\arraybackslash}p{7em}}}
+		\toprule[1.5pt]
+		 & 标准值 & 计算值& 偏差\\
+		 \midrule[1pt]
+		 \hspace{2em}1.效率$\eta$ & 0.74 & & \%\\
+		 \hspace{2em}2.功率因数$\cos\varphi$ & 0.84 & & \%\\
+		 \hspace{2em}3.最大转矩倍数$T_{m}^{*}$ & 2.2 & & \%\\
+		 \hspace{2em}4.起动转矩倍数$T_{st}^{*}$ & 2.2 & & \%\\
+		\bottomrule[1.5pt]
+	\end{tabular}
+	\caption{设计结果与设计要求比较}\label{table:结果比较}
+\end{table}
+
+
+
 \end{spacing}
 
 \end{document}
