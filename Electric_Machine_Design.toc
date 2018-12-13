@@ -4,4 +4,9 @@
 \contentsline {section}{\numberline {3}参数计算}{14}{section.3}
 \contentsline {section}{\numberline {4}工作性能计算}{21}{section.4}
 \contentsline {section}{\numberline {5}起动性能计算}{25}{section.5}
+\contentsline {section}{心得体会}{30}{table.caption.3}
+\contentsline {section}{Matlab程序}{30}{table.caption.3}
+\contentsline {subsection}{\numberline {5.1}尺寸设计}{30}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}stator\_size 函数}{31}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}磁路计算迭代}{31}{subsection.5.3}
 \contentsfinish 
